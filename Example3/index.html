@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 예제</title>
+  <link rel="stylesheet" href="./css/example.css">
+  <script type="text/javascript" src="./js/example.js"></script>
+</head>
+<body>
+  <h1 id="text">안녕하세요</h1>
+  <h1>안녕하세요</h1>
+  <button id="button1">버튼1</button>
+  <button id="button2">버튼2</button>
+  <script>
+    var button1 = document.getElementById('button1');
+    var button2 = document.getElementById('button2');
+    button1.addEventListener('click', buttonClickEvent);
+    button2.addEventListener('click', buttonClickEvent);
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Bmjua;
+  src: url("../fonts/BMJUA_otf.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #F0E8D9;
+}
+
+.title
+{
+  font-size: 64px;
+  text-align: center;
+  color: #58595b;
+  margin-top: 75px;
+  font-family: Bmjua;
+}
+
+.sub-title
+{
+  font-size: 32px;
+  text-align: center;
+  color: #58595b;
+  margin-top: 30px;
+  margin-bottom: 75px;
+  font-family: Bmjua;
+}
+
+.menu
+{
+  background-color: white;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.menu .info
+{
+  padding: 20px;
+  text-align: center;
+}
+
+.menu h3 
+{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Bmjua;
+  font-size: 32px;
+  color: #58595b;
+}
+
+.menu p
+{
+  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Bmjua;
+  font-size: 15px;
+  color: #58595b;
+  text-align: left;
+}
+
+.menu a
+{
+  text-decoration: none;
+  font-family: Bmjua;
+  color: #0000EE;
+  font-size: 16px;
+}
