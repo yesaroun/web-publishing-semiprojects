@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<head>
+    <title>커뮤니티 웨 사이트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- 여백이 없는 반응형 웹을 만들때 container-fluid 사용 -->
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <nav class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/home.svg"><span class="d-none d-md-inline">메인</span>
+                    </a>
+                    <a href="#usermenu" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" data-toggle="collapse" aria-expanded="false">
+                        <img style="width: 20px;" src="./img/user.svg"><span class="d-none d-md-inline">회원 관리</span>
+                    </a>
+                    <div class="collapse" id="usermenu">
+                        <a href="#" class="list-group-item" data-parent="#sidebar">회원가입</a>
+                        <a href="#" class="list-group-item" data-parent="#sidebar">로그인</a>
+                        <a href="#" class="list-group-item" data-parent="#sidebar">회원정보수정</a>
+                        <a href="#" class="list-group-item" data-parent="#sidebar">로그아웃</a>
+                    </div>
+                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/board.svg"><span class="d-none d-md-inline">자유 게시판</span>
+                    </a>
+                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/qna.svg"><span class="d-none d-md-inline">Q & A</span>
+                    </a>
+                    <a href="#search" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" data-toggle="collapse" aria-expanded="false">
+                        <img style="width: 20px;" src="./img/search.svg"><span class="d-none d-md-inline">검색</span>
+                    </a>
+                    <div class="collapse" id="search">
+                        <div class="input-group p-2" style="background-color: #1c1c1c;">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+            <!--여기서 main id는 화면 줄일때 캐러셀 이미지의 왼쪽 여백 줄어들때 문제 해결-->
+            <main id="main" class="col-md-9 float-left col px-5 pl-md-5 pt-3 main">
+                <div class="page-header mt-3">
+                    <h2>커뮤니티 웹 사이트</h2>
+                </div>
+                <p class="lead">이곳은 회원님들끼리 자유롭게 의사소통을 하며 즐길 수 있는 커뮤니티 웹 사이트입니다.</p>
+                <hr>
+                <button class="btn btn-success">자세히 알아보기</button>
+                <div class="width collapse show mt-3" aria-expanded="true">
+                    <p>본 사이트에서는 회원 관리 페이지, 자유 게시판 페이지, Q & A 페이지를 제공합니다.</p>
+                </div>
+                <!--carousel 집어넣음(부트스트랩에서 제공하는 가장 기본적인 carousel 사용)-->
+                <div id="carousel" class="carousel slide" style="max-width: 1080px;" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/image3.jpg" alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/image2.jpg" alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/image1.jpg" alt="Third Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">이전 사진</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">다음 사진</span>
+                    </a>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--사이드바 에서 글자들 span태그에 넣은 이유는 그렇게 해야 크기 줄였을때 사라지고 아이콘만 나옴-->
+<!-- mt-3: margin-top -->
