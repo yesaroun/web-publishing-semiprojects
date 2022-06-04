@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<head>
+    <title>커뮤니티 웨 사이트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- 여백이 없는 반응형 웹을 만들때 container-fluid 사용 -->
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <nav class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="./index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/home.svg"><span class="d-none d-md-inline">메인</span>
+                    </a>
+                    <a href="#usermenu" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" data-toggle="collapse" aria-expanded="false">
+                        <img style="width: 20px;" src="./img/user.svg"><span class="d-none d-md-inline">회원 관리</span>
+                    </a>
+                    <div class="collapse" id="usermenu">
+                        <a href="./userJoin.html" class="list-group-item" data-parent="#sidebar">회원가입</a>
+                        <a href="./userLogin.html" class="list-group-item" data-parent="#sidebar">로그인</a>
+                        <a href="./userEdit.html" class="list-group-item" data-parent="#sidebar">회원정보수정</a>
+                        <a href="./userLogout.html" class="list-group-item" data-parent="#sidebar">로그아웃</a>
+                    </div>
+                    <a href="./board.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/board.svg"><span class="d-none d-md-inline">자유 게시판</span>
+                    </a>
+                    <a href="./qna.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img style="width: 20px;" src="./img/qna.svg"><span class="d-none d-md-inline">Q & A</span>
+                    </a>
+                    <a href="#search" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" data-toggle="collapse" aria-expanded="false">
+                        <img style="width: 20px;" src="./img/search.svg"><span class="d-none d-md-inline">검색</span>
+                    </a>
+                    <div class="collapse" id="search">
+                        <div class="input-group p-2" style="background-color: #1c1c1c;">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+            <!--여기서 main id는 화면 줄일때 캐러셀 이미지의 왼쪽 여백 줄어들때 문제 해결-->
+            <main id="main" class="col-md-9 float-left col pl-md-5 pt-3 main">
+                <div class="page-header mt-3">
+                    <h2>자유게시판</h2>
+                </div>
+                <p class="lead">다른 회원들과 자유롭게 소통하세요.</p>
+                <hr>
+                <table class="table table-striped" style="max-width: 1080px;">
+                    <thead>
+                        <tr>
+                            <th class="mobile" style="width: 55px; text-align: center;">번호</th>
+                            <th style="text-align: center;">제목</th>
+                            <th class="mobile" style="width: 80px; text-align: center;">작성자</th>
+                            <th class="mobile" style="width: 120px; text-align: center;">날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="mobile" style="text-align: center;">5</td>
+                            <td><a href="./boardView.html" style="color: #000000;">오랜만입니다. 여러분, 즐겁게 소통해요</a></td>
+                            <td class="mobile" style="text-align: center;">사용자1</td>
+                            <td class="mobile" style="text-align: center;">2018-01-05</td>
+                        </tr>
+                        <tr>
+                            <td class="mobile" style="text-align: center;">4</td>
+                            <td><a href="./boardView.html" style="color: #000000;">오랜만입니다. </a></td>
+                            <td class="mobile" style="text-align: center;">사용자2</td>
+                            <td class="mobile" style="text-align: center;">2018-01-05</td>
+                        </tr>
+                        <tr>
+                            <td class="mobile" style="text-align: center;">3</td>
+                            <td><a href="./boardView.html" style="color: #000000;">즐겁게 소통해요</a></td>
+                            <td class="mobile" style="text-align: center;">사용자3</td>
+                            <td class="mobile" style="text-align: center;">2018-01-05</td>
+                        </tr>
+                        <tr>
+                            <td class="mobile" style="text-align: center;">2</td>
+                            <td><a href="./boardView.html" style="color: #000000;">여러분, </a></td>
+                            <td class="mobile" style="text-align: center;">사용자4</td>
+                            <td class="mobile" style="text-align: center;">2018-01-05</td>
+                        </tr>
+                        <tr>
+                            <td class="mobile" style="text-align: center;">1</td>
+                            <td><a href="./boardView.html" style="color: #000000;">입니다. 여러</a></td>
+                            <td class="mobile" style="text-align: center;">사용자5</td>
+                            <td class="mobile" style="text-align: center;">2018-01-05</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="max-width: 1080px;">
+                    <a href="./boardWrite.html" class="btn btn-primary float-right">글쓰기</a>
+                </div>
+                <!--페이지를 10 단위로 잘라서 보여주고 그 이상은 게시글은 페이지를 이용해서 넘어가서 다른 게시물 확인-->
+                <ul class="pagination">
+                    <!--이전 페이지 버튼(1페이지니까 이전 페이지 버튼 클릭 안됨)-->
+                    <li class="page-item disabled">
+                        <span class="page-link">&laquo;</span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link mobile" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">6</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link mobile" href="#">7</a>
+                    </li>
+                    <li class="page-item ">
+                        <a class="page-link mobile" href="#">8</a>
+                    </li>
+                    <li class="page-item ">
+                        <a class="page-link mobile" href="#">9</a>
+                    </li>
+                    <!-- 오른쪽 이동 버튼 -->
+                    <li class="page-item">
+                        <span class="page-link">&raquo;</span>
+                    </li>
+                </ul>
+                <footer class="text-center" style="max-width: 920px;">
+                    <p>Copyright &copy; 2018 <b>OOO</b> All Rights Reserved.</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--사이드바 에서 글자들 span태그에 넣은 이유는 그렇게 해야 크기 줄였을때 사라지고 아이콘만 나옴-->
+<!-- mt-3: margin-top -->
