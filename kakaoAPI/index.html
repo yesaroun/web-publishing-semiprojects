@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 연습</title>
+</head>
+
+<body>
+    <h1>API 연습</h1>
+    <p></p>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: { query:"미움받을 용기" },
+            headers: {Authorization: "KakaoAK 8aba28208eee5a99f3da52d3e572d1d4"}
+        })
+            .done(function( msg ) {
+                console.log(msg.documents[0].title);
+                console.log(msg.documents[0].thumbnail);
+                $("p").append("<strong>" + msg.documents[0].title + "</strong>");
+                $("p").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            });
+    </script>
+    <script>
+        IMP.certification({
+            merchant_uid : 'merchant_' + new Date().getTime() //본인인증과 연관된 가맹점 내부 주문번호가 있다면 넘겨주세요
+        }, function(rsp) {
+            if ( rsp.success ) {
+                 // 인증성공
+                console.log(rsp.imp_uid);
+                console.log(rsp.merchant_uid);
+                
+                $.ajax({
+                        type : 'POST',
+                        url : '/certifications/confirm',
+                        dataType : 'json',
+                        data : {
+                            imp_uid : rsp.imp_uid
+                        }
+                }).done(function(rsp) {
+                         // 이후 Business Logic 처리하시면 됩니다.
+            });
+                    
+            } else {
+                 // 인증취소 또는 인증실패
+                var msg = '인증에 실패하였습니다.';
+                msg += '에러내용 : ' + rsp.error_msg;
+        
+                alert(msg);
+            }
+        });
+
+        function(rsp) {
+            if ( rsp.success ) {
+                // 인증성공
+                console.log(rsp.imp_uid);
+                console.log(rsp.merchant_uid);
+            } else {
+                 // 인증취소 또는 인증실패
+                var msg = '인증에 실패하였습니다.';
+                msg += '에러내용 : ' + rsp.error_msg;
+        
+                alert(msg);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
