@@ -49,6 +49,11 @@ footer > a.instar{background: url(../images/social_b_instar.png) no-repeat; righ
 footer > a.instar:hover{background: url(../images/social_b_instar_hover.png) no-repeat;}
 #container {width: 100%; height: 100%; position: relative; max-width: 1200px; margin: 0 auto;}
 #container .content{width: 25%; height: 100%; position: absolute;}
+#container .content.this{width: 100%; left: 0 !important;}
+#container .content.prev{width: 100%; left: -100% !important;}
+#container .content.next{width: 100%; left: 100%;}
+#container .content.this::before, #container .content.this::after,
+#container .content.this .conbox::before{opacity: 0;}
 #container #menu1 {left: 0%; background: url(../images/content_bg1.png) repeat;}
 #container #menu2 {left: 25%; background: url(../images/content_bg2.png) repeat;}
 #container #menu3 {left: 50%; background: url(../images/content_bg3.png) repeat;}
