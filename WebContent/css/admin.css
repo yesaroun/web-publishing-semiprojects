@@ -171,6 +171,9 @@ main { margin-left: 250px; margin-top: 55px; margin-right: 100px;}
 #adCmntReptList table {text-align: center;}
 #adCmntReptList table th {font-weight: 700; background-color: #F7EDE2; }
 #adCmntReptList .list-group-item {border-radius: 4px; margin-top: 8px; margin-bottom: 20px;}
+#adCmntReptList .wid-50-col {width: 50px;}
+#adCmntReptList .wid-150-col {width: 150px;}
+#adCmntReptList .content-title {text-align: left;}
 
 /*활성화된 버튼*/
 .unactivate-btn {width:100px; background-color: #F7EDE2; color: #000000;}
@@ -184,11 +187,16 @@ main { margin-left: 250px; margin-top: 55px; margin-right: 100px;}
 #adCmntRept table {text-align: center;}
 #adCmntRept table th {font-weight: 700; background-color: #F7EDE2; }
 #adCmntRept .list-group-item {border-radius: 4px; margin-top: 8px; margin-bottom: 20px;}
+#adCmntRept .send-content-btn {width: 100%;}
+#adCmntRept .approve-btn {width: 49%; background-color: #F5CAC3;}
+#adCmntRept .deny-btn {width: 50%; background-color: #F7EDE2;}
+#adCmntRept .return-btn {width: 100%;}
 
 /*AdPostList.jsp*/
 #adPostList table {text-align: center;}
 #adPostList table th {font-weight: 700; background-color: #F7EDE2; }
 #adPostList .list-group-item {border-radius: 4px; margin-top: 8px; margin-bottom: 20px;}
+
 
 /*AdPostOpen.jsp*/
 #adPostOpen table {text-align: center;}
