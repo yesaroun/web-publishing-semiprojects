@@ -196,7 +196,7 @@ main { margin-left: 250px; margin-top: 55px; margin-right: 100px;}
 #adPostList table {text-align: center;}
 #adPostList table th {font-weight: 700; background-color: #F7EDE2; }
 #adPostList .list-group-item {border-radius: 4px; margin-top: 8px; margin-bottom: 20px;}
-
+#adPostList 
 
 /*AdPostOpen.jsp*/
 #adPostOpen table {text-align: center;}
