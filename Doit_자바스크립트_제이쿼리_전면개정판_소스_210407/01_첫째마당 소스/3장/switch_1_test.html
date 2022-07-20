@@ -4,9 +4,25 @@
 <meta charset="UTF-8">
 <title> 선택문 </title>
 <script>
-	var site = prompt("네이버, 다음, 네이트, 구글 중 \
+	let site = prompt("네이버, 다음, 네이트, 구글 중 \
 	즐겨 사용하는 포털 검색 사이트는?", "");
-	var url;
+	let url;
+
+    switch (site) {
+        case "구글":
+            url="www.google.com";
+            break;
+        case "naver":
+            url = "www.naver.com";
+            break;
+        case "daum":
+            url = "www.daum.net";
+            break;
+        default:
+            alert("no");
+    }
+
+    if(url) location.href = "http://" + url;
 
 </script>
 </head>

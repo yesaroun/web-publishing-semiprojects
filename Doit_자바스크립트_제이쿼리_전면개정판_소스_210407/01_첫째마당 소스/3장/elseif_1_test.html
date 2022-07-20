@@ -4,8 +4,17 @@
 <meta charset="UTF-8">
 <title> else if문 </title>
 <script>
-	var mon = prompt("현재는 몇 월입니까?", "0");
+	let mon = prompt("현재는 몇 월입니까?", "0");
 
+    if(mon >= 9 && mon <= 11 ){
+        document.write("read month");
+    } else if (mon >= 6 && mon <= 8) {
+        document.write("hot day");
+    } else if (mon >= 3 && mon <= 5) {
+        document.write("spring");
+    } else {
+        document.write("winter");
+    }
 </script>
 </head>
 <body>
