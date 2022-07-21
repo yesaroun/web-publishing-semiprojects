@@ -4,9 +4,18 @@
 <meta charset = "UTF-8">
 <title> window 객체 </title>
 <script>
-	var addNum = 0;
-	var subNum = 1000;
+	let addNum = 0;
+	let subNum = 1000;
 
+    let auto_1 = setInterval(function() {
+        addNum++;
+        console.log("addNum: " + addNum);
+    }, 3000);
+
+    let auto_2 = setInterval(function() {
+        subNum--;
+        console.log("subNum: " + subNum);
+    }, 3000);
 </script>
 </head>
 <body>
