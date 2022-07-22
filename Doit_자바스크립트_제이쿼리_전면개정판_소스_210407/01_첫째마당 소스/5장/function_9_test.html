@@ -4,6 +4,21 @@
 <meta charset = "UTF-8">
 <title> 함수 </title>
 <script>
+    (function(){
+        let num = 100;
+        function menu() {
+            num += 100;
+            alert(num);
+        }
+        menu();
+    }());
+
+    (function(){
+        let num = 100;
+        function menu() {
+            alert(num);
+        }
+    }());
 
 </script>
 </head>
