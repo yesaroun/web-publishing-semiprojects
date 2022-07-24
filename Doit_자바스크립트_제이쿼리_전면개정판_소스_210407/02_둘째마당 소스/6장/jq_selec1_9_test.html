@@ -6,7 +6,13 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
+    $("#wrap > h1").css("border", "2px dashed #f00");
 
+    $("#wrap > section").children()
+    .css({
+        "background-color": "black",
+        "border": "3px dashed #00f"
+    });
 });
 </script>
 </head>

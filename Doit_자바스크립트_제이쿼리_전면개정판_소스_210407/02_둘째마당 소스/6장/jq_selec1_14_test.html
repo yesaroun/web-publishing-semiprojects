@@ -6,7 +6,11 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
+    $(".txt1").parents().css("border", "2px solid #f00");
 
+    $(".txt2").parents("div").css({
+        "border":"2px solid #f00"
+    });
 });
 </script>
 </head>
