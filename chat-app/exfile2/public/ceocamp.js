@@ -1,12 +1,14 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyC_bwJHZe--tK38Gw-CXQu4trSIn2Wa8fk",
-  authDomain: "chatinga.firebaseapp.com",
-  databaseURL: "https://chatinga-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "chatinga",
-  storageBucket: "chatinga.appspot.com",
-  messagingSenderId: "13463158046",
-  appId: "1:13463158046:web:d7532e088be39a27a41d0f"
+    apiKey: "AIzaSyBCZv7QBBObx1g7jLbVJvywzczwHRwgeL8",
+    authDomain: "chat-codecamp.firebaseapp.com",
+    databaseURL: "https://chat-codecamp-default-rtdb.firebaseio.com",
+    projectId: "chat-codecamp",
+    storageBucket: "chat-codecamp.appspot.com",
+    messagingSenderId: "541622335364",
+    appId: "1:541622335364:web:c3caa79626bf67d8208fd1",
+    measurementId: "G-J5B8CD9SKZ"
 };
+
 firebase.initializeApp(firebaseConfig);
 database = firebase.database();
 

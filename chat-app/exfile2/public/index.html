@@ -10,6 +10,18 @@
     <script src="./ceocamp.js"></script>
 
     <script>
+        $(document).ready(()=>{
+            
+            loadMsgs();
+
+            $("#btn").on("click", ()=> {
+                sendMsg();
+            });
+
+            $("#message").keydown((key)=>{
+                if (key.keyCode == 13){sendMsg()};
+            });
+        });
     </script>
 
     <style>
