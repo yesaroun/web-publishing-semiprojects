@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #signup {
+            list-style: none;
+        }
+        #signup input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+        .contents :nth-child(3) {
+            background-color: #ffff00;
+        }
+        .contents p:nth-of-type(3) {
+            background-color: #00b900;
+        }
+    </style>
+</head>
+<body>
+<ul id="signup">
+    <li>
+        <input type="radio" name="room" id="basic"></inputt>
+        <label for="basic">기본형</label>
+    </li>
+    <li>
+        <input type="radio" name="room" id="family"></inputt>
+        <label for="basic">가족형</label>
+    </li>
+</ul>
+<div class="contents">
+    <h2>이용 안내</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, inventore libero nesciunt officiis porro quaerat quam repellendus sint ut voluptate? Delectus dignissimos expedita hic minus necessitatibus quos saepe sunt tempore.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur consequatur deleniti doloribus eius, esse expedita in incidunt, libero magnam maxime, molestiae natus quae quibusdam quidem repellat totam veritatis.</p>
+    <h2>객실소개</h2>
+    <p>Irure inc</p>
+    <h2>예약 방법 및 요금</h2>
+    <p>Fugiat</p>
+</div>
+</body>
+</html>

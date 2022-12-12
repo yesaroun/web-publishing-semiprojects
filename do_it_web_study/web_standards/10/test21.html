@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*#movex:hover { transform: rotateY(35deg);}*/
+
+        /*#container {*/
+        /*    perspective: 200px;*/
+        /*    margin: 200px;*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    border: 2px solid black;*/
+        /*}*/
+
+        /*#movex {*/
+        /*    transition: all 3s;*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background-color: orange;*/
+        /*}*/
+
+        #movex {
+            width: 100px;
+            height: 60px;
+            background-color: red;
+            transition-property: width, height, background-color;
+            transition-duration: 2s, 1s;
+        }
+
+        #movex:hover{
+            width: 200px;
+            height: 120px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="movex"></div>
+</div>
+</body>
+</html>
