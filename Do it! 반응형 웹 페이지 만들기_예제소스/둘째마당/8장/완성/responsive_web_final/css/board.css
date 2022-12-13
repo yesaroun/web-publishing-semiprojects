@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* 모바일용 CSS */
-/* 기본 CSS */
+/* 모바일용 css */
+/* 기본 css */
 #wrap{
 display:flex;
 flex-flow:column nowrap;
@@ -14,7 +14,7 @@ max-width:1200px;
 box-sizing:border-box;
 }
 
-/* 인포메이션 영역 CSS */
+/* 인포메이션 영역 css */
 .info_section{
 order:1;
 width:100%;
@@ -37,7 +37,7 @@ padding:15px 0;
 padding:0.938rem 0;
 }
 
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 display:flex;
 order:2;
@@ -110,7 +110,7 @@ background:url(../images/s_images/menu_toggle_btn.png) no-repeat;
 cursor:pointer;
 }
 
-/* 서브 헤더 영역 CSS */
+/* 서브 헤더 영역 css */
 .sub_header_section{
 order:3;
 padding:48px 0;
@@ -134,7 +134,7 @@ font-size:0.813rem;
 font-weight:bold;
 }
 
-/* 콘텐츠 영역 CSS */
+/* 콘텐츠 영역 css */
 .content_section{
 order:4;
 padding:20px;
@@ -278,7 +278,7 @@ color:#fff;
 background:#219af7;
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer{
 order:5;
 width:100%;
@@ -297,9 +297,9 @@ color:#fff;
 text-shadow:0px 1px 1px #191919;
 }
 
-/* 태블릿용 CSS */
+/* 태블릿용 css */
 @media all and (min-width:768px){
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 flex-direction:row;
 }
@@ -345,7 +345,7 @@ margin-top:-15px;
 margin-top:-0.938rem;
 }
 
-/* 콘텐츠 영역 CSS */
+/* 콘텐츠 영역 css */
 .content_section{
 padding:40px;
 padding:2.500rem;
@@ -421,22 +421,22 @@ cursor:pointer;
 display:block;
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer p{
 padding:40px 0;
 padding:2.500rem 0;
 }
 }
 
-/* PC용 CSS */
+/* PC용 css */
 @media all and (min-width:960px){
-/* 기본 CSS */
+/* 기본 css */
 #wrap{
 position:relative;
 width:90%;
 }
 
-/* 인포메이션 영역 CSS */
+/* 인포메이션 영역 css */
 .info_section{
 order:0;
 position:absolute;
@@ -459,7 +459,7 @@ margin-left:0.625rem;
 padding:0;
 }
 
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 order:1;
 justify-content:flex-end;
@@ -508,19 +508,19 @@ display:none;
 display:none;
 }
 
-/* 서브 헤더 영역 CSS */
+/* 서브 헤더 영역 css */
 .sub_header_section{
 order:2;
 }
 
-/* 콘텐츠 영역 CSS */
+/* 콘텐츠 영역 css */
 .content_section{
 order:3;
 padding:60px;
 padding:3.750rem;
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer{
 order:4;
 }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* 모바일용 CSS */
-/* 기본 CSS */
+/* 모바일용 css */
+/* 기본 css */
 #wrap{
 display:flex;
 flex-flow:column nowrap;
@@ -14,7 +14,7 @@ max-width:1200px;
 box-sizing:border-box;
 }
 
-/* 인포메이션 영역 CSS */
+/* 인포메이션 영역 css */
 .info_section{
 order:1;
 width:100%;
@@ -37,7 +37,7 @@ padding:15px 0;
 padding:0.938rem 0;
 }
 
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 display:flex;
 order:2;
@@ -110,7 +110,7 @@ background:url(../images/s_images/menu_toggle_btn.png) no-repeat;
 cursor:pointer;
 }
 
-/* 슬라이더 영역 CSS */
+/* 슬라이더 영역 css */
 .slider_section{
 display:flex;
 justify-content:space-between;
@@ -144,7 +144,7 @@ margin-right:-0.625rem;
 background-position:-34px 0;
 }
 
-/* 최근 글 영역, 인기 글 영역 CSS */
+/* 최근 글 영역, 인기 글 영역 css */
 .latest_post_section{
 order:4;
 background:#ffc40f;
@@ -187,7 +187,7 @@ background:url(../images/s_images/post_circle_icon.png) left center no-repeat;
 margin-top:0;
 }
 
-/* 갤러리 영역 CSS */
+/* 갤러리 영역 css */
 .gallery_section{
 order:6;
 padding:50px 12.5%;
@@ -219,7 +219,7 @@ text-transform:uppercase;
 font-weight:bold;
 }
 
-/* 인기 검색어 영역 CSS */
+/* 인기 검색어 영역 css */
 .rankup_section{
 order:7;
 padding:40px 12.5%;
@@ -257,7 +257,7 @@ border:1px solid #fff;
 border-radius:5px;
 }
 
-/* 배너 영역 CSS */
+/* 배너 영역 css */
 .banner_section{
 order:8;
 }
@@ -285,7 +285,7 @@ padding:1.875rem 12.5%;
 /* 40px ÷ 320px */
 }
 
-/* 소셜 네트워크 영역 CSS */
+/* 소셜 네트워크 영역 css */
 .social_section{
 order:9;
 padding:24px 12.5%;
@@ -299,7 +299,7 @@ display:flex;
 justify-content:space-between;
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer{
 order:10;
 width:100%;
@@ -318,14 +318,14 @@ color:#fff;
 text-shadow:0px 1px 1px #191919;
 }
 
-/* 태블릿용 CSS */
+/* 태블릿용 css */
 @media all and (min-width:768px){
-/* 기본 CSS */
+/* 기본 css */
 #wrap{
 flex-flow:row wrap;
 }
 
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 flex-direction:row;
 }
@@ -371,7 +371,7 @@ margin-top:-15px;
 margin-top:-0.938rem;
 }
 
-/* 슬라이더 영역 CSS */
+/* 슬라이더 영역 css */
 .slider_section{
 width:59.89583333333333%;
 /* 460px ÷ 768px */
@@ -383,7 +383,7 @@ position:relative;
 z-index:10;
 }
 
-/* 최근 글 영역, 인기 글 영역 CSS */
+/* 최근 글 영역, 인기 글 영역 css */
 .latest_post_section{
 order:5;
 }
@@ -400,7 +400,7 @@ padding-right:5.208333333333333333333333333333%;
 /* 40px ÷ 768px */
 }
 
-/* 갤러리 영역 CSS */
+/* 갤러리 영역 css */
 .gallery_section{
 order:8;
 width:71.354166666666666666666666666667%;
@@ -425,7 +425,7 @@ margin-left:5.982905982905982905982905982906%;
 margin-top:0;
 }
 
-/* 인기 검색어 영역 CSS */
+/* 인기 검색어 영역 css */
 .rankup_section{
 order:4;
 width:40.10416666666667%;
@@ -435,7 +435,7 @@ padding-right:5.20833333333333%;
 /* 40px ÷ 768px */
 }
 
-/* 배너 영역 CSS */
+/* 배너 영역 css */
 .banner_section{
 display:flex;
 order:9;
@@ -475,7 +475,7 @@ margin:0 14px;
 margin:0 0.875rem;
 }
 
-/* 소셜 네트워크 영역 CSS */
+/* 소셜 네트워크 영역 css */
 .social_section{
 display:flex;
 order:7;
@@ -496,22 +496,22 @@ margin:24px 0;
 margin:1.500rem 0;
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer p{
 padding:40px 0;
 padding:2.500rem 0;
 }
 }
 
-/* PC용 CSS */
+/* PC용 css */
 @media all and (min-width:960px){
-/* 기본 CSS */
+/* 기본 css */
 #wrap{
 position:relative;
 width:90%;
 }
 
-/* 인포메이션 영역 CSS */
+/* 인포메이션 영역 css */
 .info_section{
 order:0;
 position:absolute;
@@ -534,7 +534,7 @@ margin-left:0.625rem;
 padding:0;
 }
 
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 order:1;
 justify-content:flex-end;
@@ -583,14 +583,14 @@ display:none;
 display:none;
 }
 
-/* 슬라이더 영역 CSS */
+/* 슬라이더 영역 css */
 .slider_section{
 order:2;
 width:50%;
 /* 480px ÷ 960px */
 }
 
-/* 최근 글 영역, 인기 글 영역 CSS */
+/* 최근 글 영역, 인기 글 영역 css */
 .latest_post_section, .popular_post_section{
 display:flex;
 flex-direction:column;
@@ -601,7 +601,7 @@ padding-left:0;
 padding-right:0;
 }
 
-/* 갤러리 영역 CSS */
+/* 갤러리 영역 css */
 .gallery_section{    
 order:3;
 width:27.08333333333333%;
@@ -622,7 +622,7 @@ margin-top:1.875rem;
 margin-left:0;
 }
 
-/* 인기 검색어 영역 CSS */
+/* 인기 검색어 영역 css */
 .rankup_section{
 display:flex;
 flex-direction:column;
@@ -664,21 +664,21 @@ padding:0;
 border:0;
 }
 
-/* 배너 영역 CSS */
+/* 배너 영역 css */
 .banner_section{
 order:7;
 width:22.91666666666667%;
 /* 220px ÷ 960px */
 }
 
-/* 소셜 네트워크 영역 CSS */
+/* 소셜 네트워크 영역 css */
 .social_section{
 order:8;
 width:17.08333333333333%;
 /* 164px ÷ 960px */
 }
 
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer{
 order:9;
 }

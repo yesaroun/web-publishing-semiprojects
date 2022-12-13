@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* 모바일용 CSS */
-/* 기본 CSS */
+/* 모바일용 css */
+/* 기본 css */
 .container{
 width:90%;
 max-width:1132px;
@@ -44,7 +44,7 @@ margin-top:77px;
 background:#3f51b5;
 }
     
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 position:relative;
 padding:18px 5%;
@@ -98,7 +98,7 @@ background:#3f51b5;
 margin:5px 0;
 }
 
-/* 슬라이더 영역 CSS */
+/* 슬라이더 영역 css */
 .slider img{
 display:block;
 width:100%;
@@ -106,7 +106,7 @@ max-width:100%;
 height:auto;
 }
     
-/* 디스플레이 영역 CSS */
+/* 디스플레이 영역 css */
 .display-section{
 margin-top:59px;
 text-align:center;
@@ -122,7 +122,7 @@ color:#616161;
 line-height:1.9;
 }
     
-/* 프로모션 영역 CSS */
+/* 프로모션 영역 css */
 .promotion-section{
 margin-top:68px;
 }
@@ -153,7 +153,7 @@ color:#616161;
 line-height:1.5;
 }  
     
-/* 최근 작업 영역 CSS */
+/* 최근 작업 영역 css */
 .work-section{
 margin-top:73px;
 }
@@ -228,7 +228,7 @@ max-width:100%;
 height:auto;
 }   
     
-/* 최근 글 영역 CSS */
+/* 최근 글 영역 css */
 .blog-section{
 margin-top:77px;
 }
@@ -267,7 +267,7 @@ font-weight:normal;
 line-height:1.6;
 }    
     
-/* 연락처 영역 CSS */
+/* 연락처 영역 css */
 .contact-section{
 margin-top:109px;
 }
@@ -302,7 +302,7 @@ font-family:'Montserrat';
 cursor:pointer;
 }
     
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer{
 margin-top:104px;
 }
@@ -318,10 +318,10 @@ color:#3f51b5;
 text-align:center;
 }    
 
-/* 태블릿용 CSS */
+/* 태블릿용 css */
 @media all and (min-width:768px){
 
-/* 기본 CSS */
+/* 기본 css */
 .divider{
 margin-top:124px;
 }    
@@ -330,7 +330,7 @@ margin-top:124px;
 margin-top:124px;
 }
     
-/* 헤더 영역 CSS */
+/* 헤더 영역 css */
 .header{
 position:static;
 padding:28px 52px;
@@ -361,12 +361,12 @@ color:#3f51b5;
 display:none !important;
 }
     
-/* 디스플레이 영역 CSS */
+/* 디스플레이 영역 css */
 .display-section{
 margin-top:95px;
 }
 
-/* 프로모션 영역 CSS */
+/* 프로모션 영역 css */
 .promotion-section{
 margin-top:110px;
 }
@@ -384,7 +384,7 @@ margin-top:0;
 margin-left:0;
 }
     
-/* 최근 작업 영역 CSS */
+/* 최근 작업 영역 css */
 .work-section{
 margin-top:118px;
 }   
@@ -406,7 +406,7 @@ left:37px;
 transform:translateY(37px);
 }
 
-/* 최근 글 영역 CSS */
+/* 최근 글 영역 css */
 .blog-section{
 margin-top:124px;
 }
@@ -428,7 +428,7 @@ margin-top:0;
 margin-left:0;
 }
     
-/* 연락처 영역 CSS */
+/* 연락처 영역 css */
 .contact-section{
 margin-top:176px;
 }
@@ -452,7 +452,7 @@ margin-right:2.604166666666667%;
 margin-bottom:0;
 }
     
-/* 푸터 영역 CSS */
+/* 푸터 영역 css */
 .footer iframe{
 height:432px;
 }
@@ -462,10 +462,10 @@ margin:34px 0;
 }  
 }
     
-/* PC용 CSS */
+/* PC용 css */
 @media all and (min-width:1132px){
     
-/* 디스플레이 영역 CSS */
+/* 디스플레이 영역 css */
 .display-section{
 text-align:left;
 }
@@ -495,7 +495,7 @@ background:#e0e0e0;
 content:"";
 }    
 
-/* 프로모션 영역 CSS */
+/* 프로모션 영역 css */
 .promotion-section .promo-list li{
 width:23.67491166077739%;
 /* 268px ÷ 1132px*/
@@ -503,7 +503,7 @@ margin-left:1.76678445229682%;
 /* 20px ÷ 1132px*/
 }    
 
-/* 최근 작업 영역 CSS */
+/* 최근 작업 영역 css */
 .work-section .sec-tit{
 text-align:left;
 }
@@ -512,7 +512,7 @@ text-align:left;
 width:25%;
 }   
 
-/* 최근 글 영역 CSS */
+/* 최근 글 영역 css */
 .blog-section .sec-tit{
 float:left;
 margin-bottom:0;
@@ -531,7 +531,7 @@ margin-left:2.369668246445498%;
 /* 20px ÷ 844px*/
 }    
     
-/* 연락처 영역 CSS */
+/* 연락처 영역 css */
 .contact-section .sec-tit{
 float:left;
 margin-bottom:0;
