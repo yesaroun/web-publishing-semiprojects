@@ -1,0 +1,64 @@
+html, body { margin: 0; }
+#container {
+    width: 640px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.album{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    height: 400px;
+    width: 2560px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.image{
+    width: 640px;
+    height: 400px;
+}
+.image:nth-child(1){
+    background-image: url("../images/astro-selfie.jpg");
+    background-position: center;
+    background-size: 115%;
+    /*background-color: tomato;*/
+}
+.image:nth-child(2){
+    background-image: url("../images/hubble_ngc1858.jpg");
+    background-position: center;
+    background-size: 120%;
+    /*background-color: teal;*/
+}
+.image:nth-child(3){
+    background-image: url("../images/moon.jpg");
+    background-position: center;
+    background-size: 100%;
+    /*background-color: orange;*/
+}
+.image:nth-child(4){
+    background-color: green;
+}
+.image span {
+    z-index: 10;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+}
+button:disabled {
+    background-color: gray;
+}
+.prev{
+    float: left;
+}
+.next {
+    float: right;
+}
