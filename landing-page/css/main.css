@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* reset */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+header, main, footer, section, article, aside, nav {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; max-width: 100%;}
+li {list-style: none;}
+
+/*.wrap {position: relative; !*추후에 폰트 추가*!}*/
+
+/* 슬라이드 영역 */
+.slide {background: #ddd;}
+
+.slide .visual {width: 100%; height: 100vh;}
+.slide .list {width: 100%; height: 100%; position: relative; background-repeat: no-repeat; background-size: cover; background-position: center;}
+.slide .list .textBox {position: absolute; top: 60%; left: 30%; background: none; width: 100%; text-align: center;}
+/*가운데 선... 음 우선은 하지 말자 아니면 위에 글자랑 같이 위치 조정하자!!*/
+.slide .list .textBox:after{content:""; display: block; position: absolute; top: -80px; left: 50%; margin-left: -1px; width: 1px; height: 60px; background-color: black;}
+.slide .list .textBox .tit {color: #fff; font-size: 80px; line-height: 90px; letter-spacing: -1px; transform: translate(0, 30px); transition: all 0.45s ease; opacity: 0;}
+/*글자 우선은 불투명하게*/
+.slide .list .textBox .tit span {display: block; margin-bottom: 20px; color: #fff; font-size: 40px; font-weight: 300; line-height: 44px;}
+.slide .list .textBox .txt {margin-top: 25px; color: #fff; font-size: 20px; transform: translate(0, -5px); transition: all 0.45s ease; opacity: 0;}
+.slide .list .textBox .dot {opacity: 0}
+/*slide 모션*/
+.slide .list.slick-active .textBox .tit {opacity: 1; transform: translate(0,0); transition: all 0.6s ease-in-out;}
+.slide .list.slick-active .textBox .txt {opacity: 0.7; transform: translate(0,0); transition: all 0.6s ease-in-out;}
+
+
