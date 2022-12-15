@@ -52,6 +52,8 @@ $(function () {
 $(function (){
     $('.visual').slick({
         arrow: false,       // 사용할 때는 true 사용하지 않으면 false
+        prevArrow: false,
+        nextArrow: false,
         dots: true,         // 아래 선택지
         fade: true,         // 부드럽게
         autoplay: true,     // 자동 재생
