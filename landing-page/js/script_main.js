@@ -1,5 +1,15 @@
 
-
+// full page
+// $(document).ready(function() {
+// 	$('#fullpage').fullpage({
+// 		//options here
+// 		autoScrolling:true,
+// 		scrollHorizontally: true
+// 	});
+//
+// 	//methods
+// 	$.fn.fullpage.setAllowScrolling(false);
+// });
 // 이미지 슬라이드
 $(function () {
     $('.visual').slick({
@@ -30,3 +40,16 @@ $(function () {
     list = $('.visual .list');
     list.css({width: winW + 'px', height:winH + 'px'});
 });
+
+
+
+
+
+
+/*현수형 부분*/
+
+/*-----------------------------------*/
+
+/*민호형 부분*/
+
+/*-----------------------------------*/
