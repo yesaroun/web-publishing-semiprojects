@@ -1,0 +1,13 @@
+폰트 정보
+
+https://fonts.google.com/
+
+Montserrat - 타이틀 폰트 
+Nanum Myeongjo - 내용 폰트
+
+-----------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nanum+Myeongjo&display=swap');
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
