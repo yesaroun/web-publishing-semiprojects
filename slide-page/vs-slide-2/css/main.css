@@ -23,25 +23,27 @@ h1 {
     height: 400px;
 }
 .image:nth-child(1){
-    background-image: url("../images/astro-selfie.jpg");
+    background-image: url("../images/Aurora.jpg");
     background-position: center;
-    background-size: 115%;
+    background-size: 100%;
     /*background-color: tomato;*/
 }
 .image:nth-child(2){
-    background-image: url("../images/hubble_ngc1858.jpg");
+    background-image: url("../images/Aurora3.jpg");
     background-position: center;
-    background-size: 120%;
+    background-size: 100%;
     /*background-color: teal;*/
 }
 .image:nth-child(3){
-    background-image: url("../images/moon.jpg");
+    background-image: url("../images/Aurora1.gif");
     background-position: center;
     background-size: 100%;
     /*background-color: orange;*/
 }
 .image:nth-child(4){
-    background-color: green;
+    background-image: url("../images/Aurora2.jpg");
+    background-position: center;
+    background-size: 100%;
 }
 .image span {
     z-index: 10;

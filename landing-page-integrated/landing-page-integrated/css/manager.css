@@ -1,0 +1,98 @@
+body {
+    font: 90%/1.4 system-ui;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+header {
+    padding: 7vh 5vw;
+}
+
+main {
+    width: 100%;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+.primary {
+    overflow: auto;
+    scroll-snap-type: both mandatory;
+    height: 100%;
+}
+
+@media (min-width: 40em) {
+    main {
+        display: flex;
+    }
+
+    aside {
+        flex: 0 1 20vw;
+        order: 1;
+        border-right: 1px solid #ddd;
+    }
+
+    .primary {
+        order: 2;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    background-clip: padding-box;
+    scroll-snap-align: start;
+}
+
+thead {
+    z-index: 1000;
+    position: relative;
+}
+
+th,
+td {
+    padding: 0.6rem;
+    min-width: 6rem;
+    text-align: left;
+    margin: 0;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-clip: padding-box;
+}
+
+thead th.pin {
+    left: 0;
+    z-index: 1001;
+    border-left: 0;
+}
+
+tbody th {
+    background-clip: padding-box;
+    border-left: 0;
+}
+
+tbody {
+    z-index: 10;
+    position: relative;
+}
+
+tbody th {
+    position: sticky;
+    left: 0;
+}
+
+thead th,
+tbody th {
+    background-color: #f8f8f8;
+}

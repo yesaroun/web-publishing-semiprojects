@@ -11,6 +11,25 @@
 // 	$.fn.fullpage.setAllowScrolling(false);
 // });
 // 이미지 슬라이드
+const firebaseConfig = {
+    apiKey: "AIzaSyBrSmL5l7B5jZOrd4PEXfXuBY7ZrnXQr9c",
+    authDomain: "randing-page.firebaseapp.com",
+    databaseURL: "https://randing-page-default-rtdb.firebaseio.com/",
+    projectId: "randing-page",
+    storageBucket: "randing-page.appspot.com",
+    messagingSenderId: "494897134256",
+    appId: "1:494897134256:web:d8a5f9f62e428f03f49975"
+};
+
+firebase.initializeApp(firebaseConfig);
+var db = firebase.database();
+
+function guid() {
+    function s4() {
+        return ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
+    }
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
 $(function () {
     $('.visual').slick({
         prevArrow: false,
@@ -178,18 +197,39 @@ $(() => {
 
     $(function () {
         $("#confirm").click(function () {
+            var uuid = guid();
+            var name = $(".body-inputbox li:nth-child(1) input").val();
+            var tel = $(".body-inputbox li:nth-child(2) input").val();
+            var email = $(".body-inputbox li:nth-child(3) input").val();
 
-            if ($(".body-inputbox li:first-child input").val().length < 1
-                || $(".body-inputbox li:nth-child(2) input").val().length < 1
-                || $(".body-inputbox li:last-child input").val().length < 1) {
+            if (name.length < 1 || tel.length < 1 || email.length < 1)
+            {
                 alert("경고", "제대로 입력해주세요.")
-            } else {
+            }
+        else
+            {
                 modalClose();
                 //컨펌 이벤트 처리
-                // $(".news-section2").css("display", "block");
-                // $(".modal-btn-box").css("display", "none");
-                // $(".news-section2").css("transition", "all 2s");
+                $(".news-section2").css("display", "block");
+                $(".news-section2").css("transition", "all 2s");
             }
+
+            console.log(name + " " + tel + " " + email);
+
+            db.ref('name/' + uuid).set({
+                test: name
+            });
+
+            db.ref('tel/' + uuid).set({
+                test: tel
+            });
+
+            db.ref('email/' + uuid).set({
+                test: email
+            });
+            $(".body-inputbox li:nth-child(1) input").val("");
+            $(".body-inputbox li:nth-child(2) input").val("");
+            $(".body-inputbox li:nth-child(3) input").val("");
         });
         $("#modal-open").click(function () {
             $("#popup").css('display', 'flex').hide().fadeIn(800);
@@ -229,12 +269,12 @@ $(window).on('scroll resize', function () {
     fix();
 
     function fix() {
-        if(scrollPos > 5500) {
+        if(scrollPos > 5900) {
             $('.fix .text').addClass('on');
         } else {
             $('.fix .text').removeClass('on');
         }
-        if (scrollPos > 5900){
+        if (scrollPos > 6400){
             $('.fix .text').removeClass('on');
         }
     }
