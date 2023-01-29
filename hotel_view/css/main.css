@@ -73,6 +73,11 @@ header .inner .contact {
 /*contents*/
 .contents {
   background: #fff;
+
+  /*아래 부분은 footer보다 앞에 있기 위해서이다*/
+  position: relative;
+  z-index: 0;
+  margin-bottom: 200px;
 }
 .contents .visual {
   width: 100vw;
@@ -329,4 +334,44 @@ section.journal .list li a p {
   -webkit-line-clamp: 3; /*생략부호가 적용되는 라인 수*/
   -webkit-box-orient: vertical; /*박슬르 수직방향으로 배치*/
   text-align: justify;
+}
+
+/*footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #213135;
+  color: #fff;
+  padding: 75px 0;
+  box-sizing: border-box;
+
+  /*content 보다 낮은 z-index*/
+  z-index: -1;
+}
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+footer .inner .footerLogo {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .inner .contact {
+  width: 30%;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+footer .inner .sns {
+  display: flex;
+  margin-top: 20px;
+}
+footer .inner .sns li {
+  margin: 0 40px;
+  font-weight: bold;
+  font-size: 20px;
 }
