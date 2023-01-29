@@ -274,3 +274,59 @@ section.service .text {
   width: 45%;
   float: right;
 }
+
+/*section.journal*/
+section.journal {
+  background: #f2f0eb;
+  padding: 350px 0 200px;
+  margin-top: -250px;
+  font-family: 'Montserrat', sans-serif;
+}
+section.journal h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+section.journal .list {
+  display: flex;
+  justify-content: space-between;
+}
+section.journal .list li {
+  width: 330px;
+}
+section.journal .list li a {
+  display: block;
+}
+section.journal .list li a .img {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 330px;
+  position: relative;
+}
+section.journal .list li a .img img {
+  height: 100%;
+  width: auto;
+  /*높이가 100%이니까 높이는 auto여야한다. 만약 다른 값이면 깨질수도 있다*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*이렇게 해야 이미자 가운데 정렬된다.*/
+}
+section.journal .list li a h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+section.journal .list li a p {
+  font-size: 16px;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box; /*webkit-box만 적용하면 상자가 가로로 정렬*/
+  -webkit-line-clamp: 3; /*생략부호가 적용되는 라인 수*/
+  -webkit-box-orient: vertical; /*박슬르 수직방향으로 배치*/
+  text-align: justify;
+}
