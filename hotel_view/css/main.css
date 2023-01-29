@@ -105,3 +105,48 @@ header .inner .contact {
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
   /*사방으로 연하게 퍼지도록 적용*/
 }
+
+/*section.about*/
+section.about {
+  background: #f2f0eb;
+  padding: 100px 0;
+}
+section.about .inner {
+  width: 1400px;
+  margin: 0 auto;
+}
+section.about .inner .text {
+
+}
+section.about .inner .text .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+section.about .inner .text p {
+  font-size: 45px;
+  line-height: 1.2;
+  margin: 40px 0;
+}
+section.about .inner .text a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+section.about .inner .text a:hover, section.about .inner .text a:focus {
+  border: 1px solid transparent;
+  /*border 투명하게 처리*/
+  border-bottom: 1px solid #333;
+  border-radius: 0;
+  padding: 5px 18px;
+  transition: all 0.2s;
+  background: #f2f0eb;
+}
