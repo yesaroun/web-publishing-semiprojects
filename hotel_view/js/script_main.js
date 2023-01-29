@@ -64,3 +64,8 @@ $(function () {
     once: false
   });
 });
+
+// 3. 텍스트애니메이션
+$(function () {
+  Splitting();
+});

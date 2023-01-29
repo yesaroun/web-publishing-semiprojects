@@ -495,3 +495,35 @@ footer .inner .sns li {
   font-weight: bold;
   font-size: 20px;
 }
+
+/*텍스트애니메이션*/
+@keyframes textAni {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+/*visual 텍스트애니메이션*/
+.visual .title.motion .char {
+  animation: textAni 2s both;
+  animation-delay: calc(0.08s * var(--char-index));
+}
+/*.text 공통 애니메이션*/
+.text.motion .word {
+  animation: textAni 0.8s both;
+  animation-delay: calc(0.02s * var(--word-index));
+}
+.text.motion a {
+  animation: border 1s both;
+}
+@keyframes border {
+  0% {
+    border-color: transparent;
+    /*투명하게*/
+  }
+  60% {
+    border-color: transparent;
+  }
+}
