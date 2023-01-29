@@ -252,3 +252,25 @@ section.sectors .list li a:hover h3, section.sectors .list li a:focus h3 {
   letter-spacing: 4px;
   transition: all 0.5s;
 }
+
+/*section.service*/
+section.service {
+  padding: 100px 0;
+}
+section.service .inner {
+  overflow: hidden;
+  /*자식 요소에 float를 줄 경우에는 부모 요소에 overflow hidden을 줘서 높이 값을 고정 받을 수 있어야 한다.*/
+}
+section.service .img {
+  width: 48%;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section.service .img img {
+  width: 100%;
+}
+section.service .text {
+  width: 45%;
+  float: right;
+}
