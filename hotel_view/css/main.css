@@ -31,6 +31,8 @@ header {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+
+  transition: all 0.4s;
 }
 header .inner {
   width: 90%;
@@ -40,6 +42,8 @@ header .inner .logo {
   display: inline-block;
   font-size: 25px;
   letter-spacing: 1px;
+
+  transition: all 0.4s;
 }
 header .inner .gnbBtn {
   display: block;
@@ -48,6 +52,8 @@ header .inner .gnbBtn {
   height: 12px;
   position: relative;
   /*내부 a 태그들 위치 때문에!*/
+
+  transition: all 0.4s;
 }
 header .inner .gnbBtn span {
   background: #fff;
@@ -68,7 +74,24 @@ header .inner .contact {
   display: block;
   float: right;
   margin-top: 10px;
+
+  transition: all 0.4s;
 }
+
+/*header 모션*/
+header.on {
+  padding: 20px 0 18px;
+  transition: all 0.4s;
+}
+header.on .logo {
+  font-size: 22px;
+  transition: all 0.4s;
+}
+header.on .gnbBtn, header.on .contact {
+  margin-top: 4px;
+  transition: all 0.4s;
+}
+
 
 /*contents*/
 .contents {
