@@ -200,3 +200,55 @@ section.approach .inner .fix .text.on {
   bottom: 50%;
   transform: translateY(50%);
 }
+
+/*section.sectors*/
+section.sectors {
+  background: #f2f0eb;
+  padding: 100px 0 230px;
+  position: relative;
+  margin-bottom: 260px;
+}
+section.sectors .list {
+  display: flex;
+  /*옆으로 나란하게 올 수 있게 한다*/
+  justify-content: space-between;
+  /*간격이 일정하게 나눠진다.*/
+  position: absolute;
+  width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -160px;
+}
+section.sectors .list li {
+  width: 31%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+section.sectors .list li a {
+  display: block;
+  position: relative;
+}
+section.sectors .list li a img {
+  width: 100%;
+  transition: all 0.4s;
+}
+section.sectors .list li a h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+section.sectors .list li a:hover img, section.sectors .list li a:focus img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+section.sectors .list li a:hover h3, section.sectors .list li a:focus h3 {
+  letter-spacing: 4px;
+  transition: all 0.5s;
+}
