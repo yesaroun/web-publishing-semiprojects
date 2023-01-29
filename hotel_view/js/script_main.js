@@ -56,3 +56,11 @@ $(window).on('scroll resize', function () {
     }
   }
 });
+
+// 2. 스크롤 이벤트
+$(function () {
+  $('.animate').scrolla({
+    mobile: true,
+    once: false
+  });
+});
