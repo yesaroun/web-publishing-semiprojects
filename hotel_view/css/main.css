@@ -207,6 +207,11 @@ section.approach .inner .list li a {
   border-radius: 10px;
   overflow: hidden;
   /*밖에 넘치는 부분 안보이게 처리*/
+  
+  position: relative;
+}
+section.approach .inner .list li a span {
+  display: none;
 }
 section.approach .inner .list li a img {
   width: 100%;
@@ -219,6 +224,8 @@ section.approach .inner .fix {
   right: 0;
   top: 0;
 }
+
+/*section.approach - 모션*/
 section.approach .inner .fix .text {
   position: absolute;
   bottom: 10%;
@@ -227,6 +234,33 @@ section.approach .inner .fix .text.on {
   position: fixed;
   bottom: 50%;
   transform: translateY(50%);
+}
+section.approach .inner .list li a.on:after, section.approach .inner .list li a:hover:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  /*section.approach .inner .list li a 기준*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(41,41,41,0.3);
+}
+section.approach .inner .list li a.on span, section.approach .inner .list li a.hover span {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-style: italic;
+}
+section.approach .inner .list li a.on span b, section.approach .inner .list li a.hover span b {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
 }
 
 /*section.sectors*/

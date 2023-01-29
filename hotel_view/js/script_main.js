@@ -10,6 +10,7 @@ $(window).on('scroll resize', function () {
   scrollPos = $(document).scrollTop();
   fix();
   fixHeader();
+  fixList();
 
   function fix() {
     if (scrollPos > 1250) {
@@ -29,6 +30,29 @@ $(window).on('scroll resize', function () {
     }
     else {
       $('header').removeClass('on');
+    }
+  }
+
+  function fixList() {
+    $('section.approach .inner .list li a').removeClass('on');
+    if (scrollPos > 1250) {
+      $('section.approach .inner .list li a').removeClass('on');
+      $('section.approach .inner .list li:eq(0) a').addClass('on');
+    } // eq() : 인덱스 값을 사용해 원하는 위치의 요소를 선택해 가져올 수 있는 선택자 메소드
+    if (scrollPos > 1650) {
+      $('section.approach .inner .list li a').removeClass('on');
+      $('section.approach .inner .list li:eq(1) a').addClass('on');
+    }
+    if (scrollPos > 2050) {
+      $('section.approach .inner .list li a').removeClass('on');
+      $('section.approach .inner .list li:eq(2) a').addClass('on');
+    }
+    if (scrollPos > 2550) {
+      $('section.approach .inner .list li a').removeClass('on');
+      $('section.approach .inner .list li:eq(3) a').addClass('on');
+    }
+    if (scrollPos > 2900) {
+      $('section.approach .inner .list li a').removeClass('on');
     }
   }
 });
