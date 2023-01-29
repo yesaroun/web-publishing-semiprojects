@@ -69,3 +69,13 @@ $(function () {
 $(function () {
   Splitting();
 });
+
+// 5. gnb 메뉴
+$(function () {
+  $('header .gnbBtn').on('click', function () {
+    $('header nav.gnb').toggleClass('on');
+  });
+  $('.contents').on('click', function () {
+    $('header nav.gnb').removeClass('on');
+  });
+});
