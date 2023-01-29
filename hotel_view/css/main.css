@@ -93,6 +93,8 @@ header .inner .contact {
   top: 0;
 }
 .contents .visual .title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   width: 100%;
   position: absolute; /*visual의 relative 기준*/
   left: 0;
@@ -106,30 +108,24 @@ header .inner .contact {
   /*사방으로 연하게 퍼지도록 적용*/
 }
 
-/*section.about*/
-section.about {
-  background: #f2f0eb;
-  padding: 100px 0;
-}
-section.about .inner {
+/*.inner => 전체 레이아웃 넓이 공통부분*/
+.inner {
   width: 1400px;
   margin: 0 auto;
 }
-section.about .inner .text {
-
-}
-section.about .inner .text .title {
+/*.test => 텍스트 공통*/
+.text .title {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-section.about .inner .text p {
-  font-size: 45px;
+.text p {
+  font-size: 35px;
   line-height: 1.2;
   margin: 40px 0;
 }
-section.about .inner .text a {
+.text a {
   display: inline-block;
   padding: 5px 15px;
   border: 1px solid #333;
@@ -141,7 +137,7 @@ section.about .inner .text a {
   text-transform: uppercase;
   transition: all 0.2s;
 }
-section.about .inner .text a:hover, section.about .inner .text a:focus {
+.text a:hover, .text a:focus {
   border: 1px solid transparent;
   /*border 투명하게 처리*/
   border-bottom: 1px solid #333;
@@ -149,4 +145,58 @@ section.about .inner .text a:hover, section.about .inner .text a:focus {
   padding: 5px 18px;
   transition: all 0.2s;
   background: #f2f0eb;
+}
+
+/*section.about*/
+section.about {
+  background: #f2f0eb;
+  padding: 100px 0;
+}
+section .inner .text p {
+  font-size: 45px;
+}
+
+/*section.approach*/
+section.approach {
+  padding: 100px;
+}
+section.approach .inner {
+  position: relative;
+}
+section.approach .inner .list {
+  width: 48%;
+}
+section.approach .inner .list li {
+  margin-bottom: 30px;
+}
+section.approach .inner .list li:last-child {
+  margin-bottom: 0;
+}
+section.approach .inner .list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  /*밖에 넘치는 부분 안보이게 처리*/
+}
+section.approach .inner .list li a img {
+  width: 100%;
+}
+section.approach .inner .fix {
+  position: absolute;
+  /*.innser relative 기준*/
+  width: 45%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+section.approach .inner .fix .text {
+  position: absolute;
+  bottom: 10%;
+}
+section.approach .inner .fix .text.on {
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
 }
