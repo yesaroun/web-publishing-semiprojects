@@ -1,0 +1,107 @@
+@charset"utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nanum+Myeongjo&display=swap');
+
+/*reset*/
+*{padding: 0; margin: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color:inherit; text-decoration: none;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+
+/*font-family: 'Montserrat', sans-serif;*/
+body {font-family: 'Nanum Myeongjo', serif; font-size: 14px; color:#333;}
+.wrap {width: 100%; overflow: hidden;}
+
+
+/*header*/
+header {
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100;
+  background: #213135;
+  padding: 40px 0 25px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+header .inner {
+  width: 90%;
+  margin: 0 auto;
+}
+header .inner .logo {
+  display: inline-block;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+header .inner .gnbBtn {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 12px;
+  position: relative;
+  /*내부 a 태그들 위치 때문에!*/
+}
+header .inner .gnbBtn span {
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  /* 부모 요소 기준으로(gnbBtn)*/
+  left: 0;
+}
+header .inner .gnbBtn span.a {
+  top: 0;
+}
+header .inner .gnbBtn span.b {
+  bottom: 0;
+}
+header .inner .contact {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+
+/*contents*/
+.contents {
+  background: #fff;
+}
+.contents .visual {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.contents .visual .waves {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /*
+  object-fit : img나 video 등의 콘텐츠 크기 맞추는 방식
+  : cover 는 가로 세로비를 유지하면서 요소콘텐츠박스를 가득 채운다.
+  가로 세로비가 맞지 않을 경우 객체일부가 잘려나간다.
+  */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.contents .visual .title {
+  width: 100%;
+  position: absolute; /*visual의 relative 기준*/
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 70px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  /*사방으로 연하게 퍼지도록 적용*/
+}
