@@ -14,32 +14,90 @@
 		// 두 개의 배열 합치기
 		var numsChars = nums.concat(chars);
 		var charsNums = chars.concat(nums);
-		document.write("nums에 chars 합치면 : ", numsChars, "<br> chars에 nums 합치면 : ", charsNums);
-		document.write("<hr>");
 
-		// 배열 내의 요소 합치기
+		document.write("nums에 chars 합치면: ", numsChars, "<br> chars에 nums 합치면: ", charsNums);
+		document.write("<br>");
+		document.write("<br>");
+
+
+		// 배열 안의 요소 합치기
 		var string1 = nums.join();
-		document.write("구분자 없이 : ", string1);
+		document.write("구분자 없이: ", string1);
 		document.write("<br>");
-		var string2 = chars.join('/');
-		document.write("/ 구분자 지정 : ", string2);
-		document.write("<hr>");
+		let string2 = chars.join('/');
+		document.write("'/' 구부낮 지정: ", string2);
+		document.write("<br>");
+		document.write("<br>");
 
-		// 요소 추가 - 새로운 length 값 반환
-		var ret1 = nums.push(4, 5);  // 배열 끝에 추가
-		document.write("length : ", ret1, " | 배열 : ", nums);  		
-		document.write("<br>");
-		var ret2 = nums.unshift(0);  // 배열 앞에 추가
-		document.write("length : ", ret2, " | 배열 : ", nums);
-		document.write("<hr>");
 
-		// 요소 추출 - 꺼낸 요소 반환
-		var popped1 = chars.pop(); // 마지막 요소 꺼냄
-		document.write("꺼낸 요소 : ", popped1, " | 배열 : ", chars); 
+		let ret1 = nums.push(4, 5);
+		document.write("length: ", ret1, " | 배열: ", nums);
 		document.write("<br>");
-		var popped2 = chars.shift(); // 첫번째 요소 꺼냄
-		document.write("꺼낸 요소 : ", popped2, " | 배열 : ", chars);
-		document.write("<hr>");
+		let ret2 = nums.unshift(0);
+		document.write("length: ", ret2, " | 배열: ", nums);
+		document.write("<br>");
+		document.write("<br>");
+
+
+		// 요소 꺼내기 - 꺼낸 요솟값 반환
+		let popped1 = chars.pop();
+		document.write("꺼낸 요소: ", popped1, " | 배열: ", chars);
+		document.write("<br>");
+		let popped2 = chars.shift();
+		document.write("꺼낸 요소: ", popped2, " | 배열: ", chars);
+		document.write("<br>");
+		document.write("<br>");
+
+
+		// 인수가 1개인 경우
+		let numbers = [1, 2, 3, 4, 5];
+		let newNumbers = numbers.splice(2);
+		document.write("반환된 배열: " + newNumbers + "<br>");
+		document.write("변경된 배열: " + numbers + "<br>");
+		document.write("<br>");
+
+
+		let study = ["html", "css", "web", "jquery"];
+
+		// 인수가 2개인 경우
+		let newStudy = study.splice(2, 1);
+		document.write("반환된 배열: " + newStudy + "<br>");
+		document.write("변경된 배열: " + study + "<br>");
+		document.write("<br>");
+
+
+		// var nums = [1, 2, 3];
+		// var chars = ["a", "b", "c", "d"];
+		//
+		// // 두 개의 배열 합치기
+		// var numsChars = nums.concat(chars);
+		// var charsNums = chars.concat(nums);
+		// document.write("nums에 chars 합치면 : ", numsChars, "<br> chars에 nums 합치면 : ", charsNums);
+		// document.write("<hr>");
+		//
+		// // 배열 내의 요소 합치기
+		// var string1 = nums.join();
+		// document.write("구분자 없이 : ", string1);
+		// document.write("<br>");
+		// var string2 = chars.join('/');
+		// document.write("/ 구분자 지정 : ", string2);
+		// document.write("<hr>");
+		//
+		// // 요소 추가 - 새로운 length 값 반환
+		// var ret1 = nums.push(4, 5);  // 배열 끝에 추가
+		// document.write("length : ", ret1, " | 배열 : ", nums);
+		// document.write("<br>");
+		// var ret2 = nums.unshift(0);  // 배열 앞에 추가
+		// document.write("length : ", ret2, " | 배열 : ", nums);
+		// document.write("<hr>");
+		//
+		// // 요소 추출 - 꺼낸 요소 반환
+		// var popped1 = chars.pop(); // 마지막 요소 꺼냄
+		// document.write("꺼낸 요소 : ", popped1, " | 배열 : ", chars);
+		// document.write("<br>");
+		// var popped2 = chars.shift(); // 첫번째 요소 꺼냄
+		// document.write("꺼낸 요소 : ", popped2, " | 배열 : ", chars);
+		// document.write("<hr>");
 	</script>
 </body>
 </html>

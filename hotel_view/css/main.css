@@ -185,6 +185,7 @@ nav.gnb.on {
   font-size: 70px;
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
   /*사방으로 연하게 퍼지도록 적용*/
+  text-transform: uppercase;
 }
 
 /*.inner => 전체 레이아웃 넓이 공통부분*/
@@ -578,3 +579,47 @@ footer .inner .sns li {
     border-color: transparent;
   }
 }
+
+/*반응형 윕*/
+/*1400px*/
+@media screen and (max-width:1400px) {
+  .inner {
+    width: 90%;
+  }
+  section.sectors .list {
+    width: 90%;
+  }
+  section.journal .list li {
+    width: 220px;
+  }
+  section.journal .list li a .img {
+    height: 220px;
+  }
+}
+
+/*1024px*/
+@media screen and (max-width:1024px) {
+  .contents .visual .title {
+	font-size: 50px;
+  } 
+  section.about .inner .text
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
