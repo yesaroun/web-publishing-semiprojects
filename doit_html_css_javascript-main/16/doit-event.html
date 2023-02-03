@@ -18,7 +18,13 @@
   <div id="container">
     <h1>이벤트 공지</h1>
     <img src="images/doit.jpg">
-    <p><a href="doit-main.html">자세히 보기</a></p>  
+    <p><a href="doit-main.html" onclick="loadURL(this.href); return false">자세히 보기</a></p>
   </div>
+  <script>
+    function loadURL(url) {
+      window.opener.location = url;   // 부모 창(creator)의 location에 url을 넘김
+      window.close();
+    }
+  </script>
 </body>
 </html>
