@@ -22,20 +22,20 @@
   </div>
   <script>
     function addContents() {
-      var newP = document.createElement("p");
-      var txtNode = document.createTextNode("DOM은 Document Object Model의 줄임말입니다.");
+      let newP = document.createElement("p");
+      let txtNode = document.createTextNode("DOM은 document object model의 줄임말입니다.");
       newP.appendChild(txtNode);
-      
-      var newImg = document.createElement("img");
-      var srcNode = document.createAttribute("src");
-      var altNode = document.createAttribute("alt");
+
+      let newImg = document.createElement("img");
+      let srcNode = document.createAttribute("src");
+      let altNode = document.createAttribute("alt");
       srcNode.value = "images/dom.jpg";
       altNode.value = "돔 트리 예제 이미지";
       newImg.setAttributeNode(srcNode);
       newImg.setAttributeNode(altNode);
 
       document.getElementById("info").appendChild(newP);
-      document.getElementById("info").appendChild(newImg);
+      document.getElementById("info").appendChild(newImg)
     }
   </script>
 </body>

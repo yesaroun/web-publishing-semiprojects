@@ -12,14 +12,24 @@
 	<div id="current"></div>
 	
 	<script>
-		var now = new Date();
+		let now = new Date();
 
-		function inntext(){
+		function innertext() {
 			document.getElementById("current").innerText = now;
 		}
 		function innhtml() {
 			document.getElementById("current").innerHTML = "<em>" + now + "</em>";
 		}
+
+
+		// var now = new Date();
+		//
+		// function inntext(){
+		// 	document.getElementById("current").innerText = now;
+		// }
+		// function innhtml() {
+		// 	document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+		// }
 	</script>
 </body>
 </html>

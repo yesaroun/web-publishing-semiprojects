@@ -49,17 +49,30 @@
 	</div>
 
 	<script>
-		var cup = document.querySelector("#cup");
-    var smallPics = document.querySelectorAll(".small");
-      
-    for(let i = 0; i < smallPics.length; i++) {
-      smallPics[i].addEventListener("click", changePic);
-    }
-
-    function changePic() {
-      var newPic = this.src;
-      cup.setAttribute("src", newPic);
-    }			
+		let cup = document.querySelector("#cup");
+		let smallPics = document.querySelectorAll(".small");
+		
+		for (let i = 0; i < smallPics.length; i++) {
+			smallPics[i].addEventListener("click", changePic)
+		}
+		
+		function chagePic() {
+			let newPic = this.src;
+			cup.setAttribute("src", newPic)
+		}
+		
+		
+		// var cup = document.querySelector("#cup");
+    // var smallPics = document.querySelectorAll(".small");
+    //  
+    // for(let i = 0; i < smallPics.length; i++) {
+    //   smallPics[i].addEventListener("click", changePic);
+    // }
+		//
+    // function changePic() {
+    //   var newPic = this.src;
+    //   cup.setAttribute("src", newPic);
+    // }			
 	</script>
 </body>
 </html>
