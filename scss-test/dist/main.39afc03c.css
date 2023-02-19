@@ -1,7 +1,18 @@
-.box {
-  background-color: royalblue;
-  width: calc(100% - 200px);
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
+.container .item {
+  width: 100px;
   height: 100px;
+  background-color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

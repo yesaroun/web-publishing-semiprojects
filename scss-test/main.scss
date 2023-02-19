@@ -1,5 +1,14 @@
+@mixin box($size: 100px, $color: tomato) {
+	width: $size;
+	height: $size;
+	background-color: $color;
+}
+.container {
+	@include box(200px);
+	.item {
+		@include box($color: red);
+	}
+}
 .box {
-	background-color: royalblue;
-	width: calc(100% - 200px);
-	height: 100px;
+	@include box;
 }
